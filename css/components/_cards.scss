@@ -1,0 +1,30 @@
+// Cards Restaurants
+.card{
+    position: relative;
+    background-color: white;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #d2c2d3;
+    display: block;
+}
+
+.card__image{
+    max-height: 175px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__badge{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    background-color: #99E2D0;
+    color: #008766;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
