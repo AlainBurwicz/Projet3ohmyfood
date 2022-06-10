@@ -51,65 +51,52 @@ body {
 // FOOTER
 
 .footer {
-  max-width: 1280px;
-  margin: auto;
-  position: relative;
-  width: 100%;
-  background-color: #6f6e6e;
-  @include padding-cont;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-
+  background-color: #8d8d8d;
+  
+  .contenufooter {
+    display: flex;
+    flex-direction: column;
+    padding: $def-padding;
+  }
+  
   &__logo {
-    font-size: 24px;
-    padding-left: 40px;
-    font-family: "ShriKhand", sans-serif;
     color: white;
-    margin-bottom: 15px;
-  }
-  &__txt {
-    color: white;
-  }
-  &__icons {
-    margin-right: 10px;
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: $def-padding;
   }
 
   &__liste {
-    margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  .foot__nav {
-    & ul {
-      padding-left: 0;
-      margin-bottom: 0;
-      & li {
-        @include tablettes {
-          margin: auto;
-          width: auto;
-          text-align: center;
-          flex: 1;
-        }
-        list-style: none;
-        margin-left: 0;
-        margin-bottom: 16px;
-        & i {
-          color: white;
-          margin-right: 1%;
-          font-size: 1rem;
-        }
-        & a {
-          text-decoration: none;
-          font-size: 1rem;
-          color: white;
-          width: 100%;
-        }
-      }
-      @include tablettes {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
+  &__listecontent {
+    margin: 0.5rem 0;
+
+    &:first-child {
+      margin-top: 0;
     }
+
+    &:last-child {
+      color: white;
+      margin-bottom: 0;
+    }
+  }
+
+  &__mail {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
   }
 }

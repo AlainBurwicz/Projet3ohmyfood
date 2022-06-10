@@ -8,31 +8,33 @@
 // ANIMATION
 
 .pagevierge {
-  background-color: white;
-}
+  background-color: rgba(255, 255, 255, 0.90);
 
-#loader_animation {
-width: 180px;
-height: 180px;
-border: 10px solid $primary-color;
-border-radius: 50%;
-animation-name: cercle;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
-animation-fill-mode: forwards;
-position: absolute;
-margin: auto auto;
-left: 0;
-right: 0;
-top: 0;
-bottom: 0;
-box-shadow: 5px 10px $tertiary-color, 60px -16px $secondary-color;
-z-index: 500;
 }
+.loader_animation {
+  width: 180px;
+  height: 180px;
+  border: 10px solid $primary-color;
+  border-radius: 50%;
+  animation-name: cercle;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+  animation-fill-mode: forwards;
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 5px 10px $tertiary-color, 60px -16px $secondary-color;
+  z-index: 500;
+  }
 
 // LOCALISATION
 #localisation {
+  
+
   @include flexhoricenter;
   width: 100%;
   height: 50px;
@@ -44,6 +46,10 @@ z-index: 500;
   & span {
     position: relative;
     right: 0.5em;
+  }
+  @media (min-width:64rem) {
+    flex: 1;
+    margin: 0;
   }
 }
 
@@ -87,6 +93,10 @@ z-index: 500;
   @include tablettes {
     height: auto;
     flex: 1;
+  }
+  @media (min-width:64rem) {
+    flex: 1;
+    margin: 0;
   }
 }
 
@@ -229,7 +239,7 @@ z-index: 500;
 }
 
 .info {
-  height: 6.25rem;
+  height: 4.25rem;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -280,53 +290,3 @@ z-index: 500;
   }
 }
 
-@media screen and (min-width: 750px) {
-  .container {
-    width: 75%;
-    margin: auto;
-  }
-  h2 {
-    width: 75%;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    width: 100%;
-    &__card {
-      width: 49%;
-    }
-  }
-
-  h2,
-  .footer__logo {
-    width: 100%;
-    margin: 0;
-  }
-
-  .assiettes {
-    width: 25%;
-  }
-
-  .page {
-    width: 80%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .contentrees {
-    max-width: 75%;
-    margin: auto;
-  }
-
-  h3 {
-    text-align: center;
-  }
-}
