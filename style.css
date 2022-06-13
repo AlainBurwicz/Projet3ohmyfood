@@ -65,7 +65,7 @@ body {
 }
 
 .footer {
-  background-color: #8d8d8d;
+  background-color: #443E3C;
 }
 .footer .contenufooter {
   display: flex;
@@ -392,39 +392,43 @@ body {
 }
 
 .delay-0 {
-  animation-delay: 0s;
+  animation-delay: 0, 9s;
 }
 
 .delay-1 {
-  animation-delay: 0.1s;
+  animation-delay: 1, 9s;
 }
 
 .delay-2 {
-  animation-delay: 0.2s;
+  animation-delay: 2, 9s;
 }
 
 .delay-3 {
-  animation-delay: 0.3s;
+  animation-delay: 3, 9s;
 }
 
 .delay-4 {
-  animation-delay: 0.4s;
+  animation-delay: 4, 9s;
 }
 
 .delay-5 {
-  animation-delay: 0.5s;
+  animation-delay: 5, 9s;
 }
 
 .delay-6 {
-  animation-delay: 0.6s;
+  animation-delay: 6, 9s;
 }
 
 .delay-7 {
-  animation-delay: 0.7s;
+  animation-delay: 7, 9s;
 }
 
 .delay-8 {
-  animation-delay: 0.8s;
+  animation-delay: 8, 9s;
+}
+
+.delay-9 {
+  animation-delay: 9, 9s;
 }
 
 .boutonmenu {
@@ -436,7 +440,7 @@ body {
 
 .btnmenu {
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 3rem;
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 100px;
@@ -543,7 +547,19 @@ body {
   }
 }
 .pagevierge {
-  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: white;
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loader_animation {
@@ -552,7 +568,7 @@ body {
   border: 10px solid #9356DC;
   border-radius: 50%;
   animation-name: cercle;
-  animation-duration: 2s;
+  animation-duration: 1.75s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
   animation-fill-mode: forwards;
@@ -697,6 +713,10 @@ body {
 .function__icon {
   margin-right: 1rem;
   color: #7e7e7e;
+  cursor: pointer;
+}
+.function__icon:hover {
+  color: #9356DC;
 }
 
 .restaurants {
