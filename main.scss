@@ -92,7 +92,7 @@
     padding: 1rem 1.25rem;
     font-weight: bold;
     transform: scale(1);
-    transform: 400ms;
+    transition-duration: 00.25s;
     opacity: 1;
   }
 
@@ -286,7 +286,7 @@
     }
 
     &__coeur--1 {
-      background: -webkit-linear-gradient($secondary-color, $primary-color);
+      background: linear-gradient($secondary-color, $primary-color);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;

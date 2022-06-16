@@ -222,11 +222,11 @@
 
 // BOUCLE ANIMATION APPARITION DES MENUS
 
-  @for $i from 0 to 10 {
-  .delay-#{$i} {
-  animation-delay:  #{$i,9}s;
-  }
-  }
+  // @for $i from 0 to 10 {
+  // .delay-#{$i} {
+  // animation-delay:  #{$i,9}s;
+  // }
+  // }
 
 
 

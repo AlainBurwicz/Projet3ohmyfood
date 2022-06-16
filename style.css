@@ -391,46 +391,6 @@ body {
   color: #99E2D0;
 }
 
-.delay-0 {
-  animation-delay: 0, 9s;
-}
-
-.delay-1 {
-  animation-delay: 1, 9s;
-}
-
-.delay-2 {
-  animation-delay: 2, 9s;
-}
-
-.delay-3 {
-  animation-delay: 3, 9s;
-}
-
-.delay-4 {
-  animation-delay: 4, 9s;
-}
-
-.delay-5 {
-  animation-delay: 5, 9s;
-}
-
-.delay-6 {
-  animation-delay: 6, 9s;
-}
-
-.delay-7 {
-  animation-delay: 7, 9s;
-}
-
-.delay-8 {
-  animation-delay: 8, 9s;
-}
-
-.delay-9 {
-  animation-delay: 9, 9s;
-}
-
 .boutonmenu {
   display: flex;
   text-decoration: none;
@@ -629,7 +589,7 @@ body {
   padding: 1rem 1.25rem;
   font-weight: bold;
   transform: scale(1);
-  transform: 400ms;
+  transition-duration: 0.25s;
   opacity: 1;
 }
 .intitule__btn:hover {
@@ -808,7 +768,7 @@ body {
   background: #e6e6e6;
 }
 .info__label__coeur--1 {
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
