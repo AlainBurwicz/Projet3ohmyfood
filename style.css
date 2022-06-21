@@ -108,7 +108,7 @@ body {
 
 @keyframes apparition {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
@@ -421,7 +421,7 @@ body {
 
 @keyframes apparition {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
@@ -514,7 +514,7 @@ body {
   top: 0;
   background: white;
   animation: loader 0.01s;
-  animation-delay: 1.75s;
+  animation-delay: 2s;
   animation-fill-mode: both;
   z-index: 10000;
   display: flex;
@@ -528,7 +528,7 @@ body {
   border: 10px solid #9356DC;
   border-radius: 50%;
   animation-name: cercle;
-  animation-duration: 1.75s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
   animation-fill-mode: forwards;
